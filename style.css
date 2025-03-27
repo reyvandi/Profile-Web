@@ -1,0 +1,197 @@
+/* General Styles */
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 150px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.2);
+    padding: 15px 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5d55f4;
+    font-weight: 400;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ff5e;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 120px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Hero Section */
+#Hero {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#Hero .col {
+    width: 50%;
+
+}
+
+.row {
+    margin-left: 60px;
+}
+
+#col-hero2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    border-radius: 10px;
+}
+
+/* Buttons */
+.row3 button {
+    background-color: #5d55f4;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.row3 button:hover {
+    background-color: #00ff5e;
+    color: #333;
+}
+
+/* Table Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+td[colspan="2"] {
+    width: 50px;
+}
+
+table h2, table h1 {
+    color: #5d55f4;
+}
+
+table p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Card Section */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-container img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.bawah {
+    text-align: center;
+    padding: 20px;
+    background-color: #5d55f4;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: initial;
+    font-size: 65px;
+}
